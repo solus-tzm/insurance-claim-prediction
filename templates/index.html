@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Insurance Claim Predictor</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Health Insurance Claim Predictor</h1>
+        <form id="prediction-form">
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="sex">Sex:</label>
+            <select id="sex" name="sex" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+
+            <label for="bmi">BMI:</label>
+            <input type="number" step="0.01" id="bmi" name="bmi" required>
+
+            <label for="children">Number of Children:</label>
+            <input type="number" id="children" name="children" required>
+
+            <label for="smoker">Smoker:</label>
+            <select id="smoker" name="smoker" required>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <label for="region">Region:</label>
+            <select id="region" name="region" required>
+                <option value="northeast">Northeast</option>
+                <option value="northwest">Northwest</option>
+                <option value="southeast">Southeast</option>
+                <option value="southwest">Southwest</option>
+            </select>
+
+            <button type="submit">Predict Claim Likelihood</button>
+        </form>
+        
+        <div id="prediction-result"></div>
+    </div>
+    <script src="/static/js/main.js"></script>
+</body>
+</html>

@@ -54,6 +54,10 @@ The current model achieves:
 - F1 Score: 95%
 - ROC AUC: 95%
 
+## Deploy
+
+You can also access the project on web by link `https://insurance-claim-prediction-a3sv.onrender.com/`
+
 ## License
 
-MIT License
+Project was made by `Zakir Aripzhanov` a.k.a `1tzme` `solus-tzm`
